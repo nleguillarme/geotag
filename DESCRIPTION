@@ -1,11 +1,11 @@
 Package: geotag
-Title: A R package for applying geographical filters to biodiversity survey data
+Title: A R package to apply geographical filters to MOTUs lists
 Version: 1.0.0
 Authors@R: person("Nicolas", "Le Guillarme", email = "nicolas.leguillarme@univ-grenoble-alpes.fr",
                   role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4559-7579"))
-Description:
+Description: A R package to apply geographical filters to MOTUs lists
 Author: Nicolas Le Guillarme
-Depends: R (>= 3.6.0), SPARQL, yaml, stringr, igraph, dplyr, here, memoise, stringr, readtext
+Depends: R (>= 3.6.0), rgbif, logger, taxonbridge
 Imports: rgbif, logger, taxonbridge
 Suggests:
     testthat,

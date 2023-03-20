@@ -37,6 +37,10 @@ You can also check for available releases on the project's GitHub page : https:/
 
 Now that geotag is correctly installed, you are ready to go.
 
+```{r}
+library(geotag)
+```
+
 # Initialize the taxonomic reference
 
 geotag uses the taxonbridge package (https://github.com/MoultDB/taxonbridge) to merge the GBIF backbone and NCBI taxonomies into a single taxonomic reference. This allows geotag to handle both taxonomies seamlessly.
@@ -54,13 +58,13 @@ This will create a file "taxonomy.rds" in the working directory.
 Before using one of the filters provided by geotag, you have to load the taxonomic reference:
 
 ```{r}
-taxonomy = readRDS("taxonomy.rds")
+taxonomy = readRDS("../taxonomy.rds")
 ```
 
 Then load your data:
 
 ```{r}
-df = read.csv("data/sample.csv")
+df = read.csv("../data/sample.csv")
 ```
 
 The data frame contains a column called "taxa_to_filter", which contains the scientific names of the MOTUs in the NCBI taxonomy.
