@@ -1,0 +1,20 @@
+Package: geotag
+Title: A R package for applying geographical filters to biodiversity survey data
+Version: 1.0.0
+Authors@R: person("Nicolas", "Le Guillarme", email = "nicolas.leguillarme@univ-grenoble-alpes.fr",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4559-7579"))
+Description:
+Author: Nicolas Le Guillarme
+Depends: R (>= 3.6.0), SPARQL, yaml, stringr, igraph, dplyr, here, memoise, stringr, readtext
+Imports: rgbif, logger, taxonbridge
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+License: GNU General Public License v3.0
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/nleguillarme/geotag
+BugReports: https://github.com/nleguillarme/geotag/issues
+RoxygenNote: 7.2.1
