@@ -5,7 +5,7 @@ A R package to apply geographical filters to MOTUs lists
 `
 install.packages("https://github.com/nleguillarme/geotag/releases/latest/download/geotag.tar.gz", repos=NULL)
 `
-## Run example
+## Check the example
 `
 vignette("geotag")
 `
